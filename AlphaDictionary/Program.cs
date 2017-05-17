@@ -21,11 +21,11 @@ namespace AlphaDictionary
                 {
                     break;
                 }
-                if (!myDictionary.ContainsKey(word[0]))
+                if (!myDictionary.ContainsKey(char.ToLower(word[0])))
                 {
-                    myDictionary.Add(word[0], new List<string>());
+                    myDictionary.Add(char.ToLower(word[0]), new List<string>());
                 }
-                myDictionary[word[0]].Add(word);
+                myDictionary[char.ToLower(word[0])].Add(word);
                 
             } while (true);
 
